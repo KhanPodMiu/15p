@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu lạc bộ Guitar - UniClub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="club-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="bieu-tuong">
+          <i class="fas fa-graduation-cap"></i> UniClub
+        </div>
+        <div class="nut-ba-gach">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="danh-sach-dieu-huong">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li>
+            <a href="index.html#gioi-thieu"
+              ><i class="fas fa-info-circle"></i> Giới thiệu</a
+            >
+          </li>
+          <li>
+            <a href="index.html#su-kien"
+              ><i class="fas fa-calendar"></i> Sự kiện</a
+            >
+          </li>
+          <li>
+            <a href="index.html#lien-he"
+              ><i class="fas fa-envelope"></i> Liên hệ</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="club-page">
+      <section class="club-hero">
+        <img src="images/guitar-club-banner.jpg" alt="Câu lạc bộ Guitar" />
+        <h1>Câu lạc bộ Guitar</h1>
+      </section>
+
+      <section class="club-info">
+        <div class="container">
+          <h2>Về Câu lạc bộ</h2>
+          <p>
+            Câu lạc bộ Guitar UniClub là nơi quy tụ những người yêu thích âm
+            nhạc và đam mê cây đàn guitar. Chúng tôi cung cấp môi trường học tập
+            và thực hành chuyên nghiệp cho các thành viên.
+          </p>
+
+          <h2>Hoạt động chính</h2>
+          <ul>
+            <li>Lớp học guitar cơ bản cho người mới bắt đầu</li>
+            <li>Workshop kỹ thuật nâng cao hàng tháng</li>
+            <li>Buổi biểu diễn định kỳ</li>
+            <li>Giao lưu với các câu lạc bộ guitar khác</li>
+          </ul>
+
+          <h2>Lịch hoạt động</h2>
+          <div class="schedule">
+            <div class="schedule-item">
+              <h3>Thứ 2 & Thứ 4</h3>
+              <p>18:00 - 20:00: Lớp cơ bản</p>
+            </div>
+            <div class="schedule-item">
+              <h3>Thứ 3 & Thứ 5</h3>
+              <p>18:00 - 20:00: Lớp nâng cao</p>
+            </div>
+            <div class="schedule-item">
+              <h3>Thứ 7</h3>
+              <p>14:00 - 17:00: Thực hành tự do</p>
+            </div>
+          </div>
+
+          <h2>Đăng ký tham gia</h2>
+          <form class="registration-form">
+            <div class="form-group">
+              <label for="name">Họ và tên:</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Số điện thoại:</label>
+              <input type="tel" id="phone" />
+            </div>
+            <div class="form-group">
+              <label for="level">Trình độ:</label>
+              <select id="level" required>
+                <option value="">Chọn trình độ</option>
+                <option value="beginner">Người mới bắt đầu</option>
+                <option value="intermediate">Trung cấp</option>
+                <option value="advanced">Nâng cao</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Lời nhắn:</label>
+              <textarea id="message" rows="4"></textarea>
+            </div>
+            <button type="submit">Đăng ký</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

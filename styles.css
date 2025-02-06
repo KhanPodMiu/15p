@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation */
+header {
+  background-color: #333;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bieu-tuong {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.danh-sach-dieu-huong {
+  display: flex;
+  list-style: none;
+}
+
+.danh-sach-dieu-huong li {
+  margin-left: 2rem;
+}
+
+.danh-sach-dieu-huong a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.danh-sach-dieu-huong a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+.anh-bia {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+}
+
+.noi-dung-bia h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.nut-hanh-dong {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #ffd700;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+  transition: background-color 0.3s;
+}
+
+.nut-hanh-dong:hover {
+  background-color: #ffed4a;
+}
+
+/* About Section */
+.gioi-thieu {
+  padding: 5rem 1rem;
+  background-color: #f4f4f4;
+}
+
+.gioi-thieu h2,
+.su-kien h2,
+.lien-he h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.noi-dung-gioi-thieu {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Events Section */
+.su-kien {
+  padding: 5rem 1rem;
+}
+
+.luoi-su-kien {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.the-su-kien {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.the-su-kien h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.lien-he {
+  padding: 5rem 1rem;
+  background-color: #f4f4f4;
+}
+
+.bieu-mau-lien-he {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bieu-mau-lien-he input,
+.bieu-mau-lien-he textarea {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.bieu-mau-lien-he textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.nut-gui {
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nut-gui:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  .danh-sach-dieu-huong {
+    display: none;
+  }
+
+  .anh-bia h1 {
+    font-size: 2rem;
+  }
+
+  .gioi-thieu h2,
+  .su-kien h2,
+  .lien-he h2 {
+    font-size: 2rem;
+  }
+}
