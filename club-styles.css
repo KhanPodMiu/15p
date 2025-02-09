@@ -12,7 +12,7 @@
 .club-hero img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  filter: brightness(0.7);
 }
 
 .club-hero h1 {
@@ -21,10 +21,22 @@
   left: 0;
   right: 0;
   padding: 20px;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   color: white;
   margin: 0;
   font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .club-info {
@@ -70,48 +82,97 @@
   margin: 0 0 10px 0;
 }
 
+/* Registration Form Styles */
 .registration-form {
   max-width: 600px;
-  margin: 20px 0;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   color: #333;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.input-with-icon {
+  position: relative;
 }
 
-.form-group textarea {
-  resize: vertical;
+.input-with-icon i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #667eea;
+  z-index: 1;
+}
+
+.input-with-icon input,
+.input-with-icon select,
+.input-with-icon textarea {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 3rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.input-with-icon textarea {
+  padding-top: 2rem;
+}
+
+.input-with-icon i.fa-comment-alt {
+  top: 1.5rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .registration-form button {
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   width: 100%;
+  padding: 1rem;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.registration-form button:hover {
-  background-color: #45a049;
+.registration-form button i {
+  transition: transform 0.3s ease;
 }
 
+.registration-form button:hover i {
+  transform: translateX(5px);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .club-hero {
     height: 300px;
@@ -119,5 +180,16 @@
 
   .club-hero h1 {
     font-size: 2em;
+  }
+
+  .registration-form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.9rem;
   }
 }
