@@ -153,7 +153,7 @@ nav {
 /* Contact Section */
 .lien-he {
   padding: 5rem 1rem;
-  background-color: #f4f4f4;
+  background-color: #f8f9fa;
 }
 
 .bieu-mau-lien-he {
@@ -161,49 +161,81 @@ nav {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nhom-truong {
+  position: relative;
+}
+
+.nhom-truong i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #667eea;
 }
 
 .bieu-mau-lien-he input,
 .bieu-mau-lien-he textarea {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
   font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
 }
 
 .bieu-mau-lien-he textarea {
   height: 150px;
   resize: vertical;
+  padding-top: 1rem;
+}
+
+.bieu-mau-lien-he input:focus,
+.bieu-mau-lien-he textarea:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .nut-gui {
-  padding: 1rem;
-  background-color: #333;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-.nut-gui:hover {
-  background-color: #444;
+.nut-gui i {
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 768px) {
-  .danh-sach-dieu-huong {
-    display: none;
+  .bieu-mau-lien-he {
+    padding: 1.5rem;
   }
 
-  .anh-bia h1 {
-    font-size: 2rem;
+  .bieu-mau-lien-he input,
+  .bieu-mau-lien-he textarea {
+    font-size: 0.9rem;
   }
 
-  .gioi-thieu h2,
-  .su-kien h2,
-  .lien-he h2 {
-    font-size: 2rem;
+  .nut-gui {
+    padding: 0.8rem 1.5rem;
   }
 }
 
