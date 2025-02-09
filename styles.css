@@ -5,13 +5,13 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
 }
 
-/* Navigation */
 header {
-  background-color: #333;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   position: fixed;
   width: 100%;
@@ -28,9 +28,10 @@ nav {
 }
 
 .bieu-tuong {
-  color: white;
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .danh-sach-dieu-huong {
@@ -43,9 +44,11 @@ nav {
 }
 
 .danh-sach-dieu-huong a {
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   transition: color 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .danh-sach-dieu-huong a:hover {
@@ -55,7 +58,11 @@ nav {
 /* Hero Section */
 .anh-bia {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(118, 115, 115, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/dhqg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,6 +75,14 @@ nav {
 .noi-dung-bia h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+.noi-dung-bia p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 .nut-hanh-dong {
@@ -97,6 +112,8 @@ nav {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 2.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
 }
 
 .noi-dung-gioi-thieu {
@@ -129,6 +146,8 @@ nav {
 .the-su-kien h3 {
   color: #333;
   margin-bottom: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
 }
 
 /* Contact Section */
@@ -186,4 +205,11 @@ nav {
   .lien-he h2 {
     font-size: 2rem;
   }
+}
+
+h1,
+h2,
+h3,
+.bieu-tuong {
+  font-family: "Ubuntu", sans-serif;
 }

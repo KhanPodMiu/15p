@@ -55,7 +55,6 @@
 
 .schedule {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin: 20px 0;
 }
@@ -120,9 +119,5 @@
 
   .club-hero h1 {
     font-size: 2em;
-  }
-
-  .schedule {
-    grid-template-columns: 1fr;
   }
 }
