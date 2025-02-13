@@ -91,7 +91,6 @@ nav {
   transition: background-color 0.3s;
 }
 
-/* About Section */
 .gioi-thieu {
   padding: 5rem 1rem;
   background-color: #f4f4f4;
@@ -113,7 +112,6 @@ nav {
   text-align: center;
 }
 
-/* Events Section */
 .su-kien {
   padding: 5rem 1rem;
 }
@@ -213,21 +211,6 @@ nav {
 
 .nut-gui i {
   transition: transform 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .bieu-mau-lien-he {
-    padding: 1.5rem;
-  }
-
-  .bieu-mau-lien-he input,
-  .bieu-mau-lien-he textarea {
-    font-size: 0.9rem;
-  }
-
-  .nut-gui {
-    padding: 0.8rem 1.5rem;
-  }
 }
 
 h1,
