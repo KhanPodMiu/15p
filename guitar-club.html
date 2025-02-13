@@ -17,11 +17,6 @@
         <div class="bieu-tuong">
           <i class="fas fa-graduation-cap"></i> UniClub
         </div>
-        <div class="nut-ba-gach">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
         <ul class="danh-sach-dieu-huong">
           <li>
             <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
@@ -47,7 +42,7 @@
 
     <main class="club-page">
       <section class="club-hero">
-        <img src="images/hcmus.jpg" alt="Câu lạc bộ Guitar" />
+        <img src="images/guitar-main.jpg" alt="Câu lạc bộ Guitar" />
         <h1>Câu lạc bộ Guitar</h1>
       </section>
 
@@ -70,7 +65,7 @@
 
           <div class="gallery-box">
             <div class="gallery-item">
-              <img src="images/hcmus.jpg" alt="Buổi biểu diễn guitar" />
+              <img src="images/xvinh.jpg" alt="Buổi biểu diễn guitar" />
               <p class="image-caption">Buổi biểu diễn tháng 12/2023</p>
             </div>
             <div class="gallery-item">
@@ -144,5 +139,14 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const hamburger = document.querySelector(".nut-ba-gach");
+      const navMenu = document.querySelector(".danh-sach-dieu-huong");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
