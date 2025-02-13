@@ -219,3 +219,18 @@ h3,
 .bieu-tuong {
   font-family: "Ubuntu", sans-serif;
 }
+
+/* Event Icons */
+.bieu-tuong-su-kien {
+  font-size: 2.5rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.bieu-tuong-su-kien i {
+  transition: transform 0.3s ease;
+}
+
+.the-su-kien:hover .bieu-tuong-su-kien i {
+  transform: scale(1.1);
+}
